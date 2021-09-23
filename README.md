@@ -18,7 +18,7 @@ A simple example:
 ```dart
 ...
 
-FlutterNotificationCenter.subscribe(
+DartNotificationCenter.subscribe(
   channel: 'examples',
   observer: this,
   onNotification: (options) {
@@ -26,9 +26,9 @@ FlutterNotificationCenter.subscribe(
   },
 );
 
-FlutterNotificationCenter.post(channel: 'examples', options: 'Congrats you did it!');
+DartNotificationCenter.post(channel: 'examples', options: 'Congrats you did it!');
 
-FlutterNotificationCenter.unsubscribe(channel: 'examples', observer: this);
+DartNotificationCenter.unsubscribe(channel: 'examples', observer: this);
 
 ...
 ```
